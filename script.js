@@ -8,6 +8,7 @@ const redButton = document.getElementById("redButton");
 const pandaImage = document.getElementById("pandaImage");
 const backToStartLink = document.getElementById("backToStartLink");
 const startButton = document.getElementById("startButton");
+
 // Sections
 const introSection = document.getElementById("introSection");
 const interactiveSection = document.getElementById("interactiveSection");
@@ -15,9 +16,11 @@ const conclusionSection = document.getElementById("conclusionSection");
 const nextButton = document.getElementById("nextButton");
 const restartButton = document.getElementById("restartButton");
 const finalPandaImage = document.getElementById("pandaImageFinal");
+
 // Images and colours
 let finalImageSrc = ""; // Path for the final images
 let userColor = ""; // Colours to be selected by the user
+
 // Random colour selection
 let pandaFavoriteColor = ["blue", "orange", "yellow", "pink", "red"][
   Math.floor(Math.random() * 5)
@@ -61,6 +64,10 @@ function section1Transition() {
 }
 
 function section2Transition() {
+  if (!userColor) {
+    alert("Please select a colour");
+    return;
+  }
   interactiveSection.style.display = "none"; // Interactive section hidden
   conclusionSection.style.display = "block"; // Conclusion section displayed
   finalPandaImage.src = finalImageSrc; // The final image is displayed depending on user colour selected
@@ -75,10 +82,8 @@ function section2Transition() {
     alert(
       "Nice choice! But Panda's favorite colour is " + pandaFavoriteColor + "."
     );
-  }
+  } 
 }
-
-// Need to: add if user does not select a colour, random colour is not generated and new alert created to advise to select a colour
 
 function resetToHomePage(reset) {
   if (reset) reset.preventDefault(); // Prevent default behavior if event is provided
