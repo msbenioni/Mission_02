@@ -7,7 +7,7 @@ body {
   font-weight: bold;
   background-color: #228b22;
   margin-top: 10px;
-  padding: 10;
+  padding: 10px;
   overflow-x: hidden;
 }
 
@@ -15,7 +15,7 @@ header {
   font-size: 20px;
   padding: 0px;
   text-align: center;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 header h2 {
@@ -33,9 +33,9 @@ main {
   background-position-x: center;
 }
 img {
-  max-width: 200%;
+  max-width: 100%;
   margin: auto;
-  display: flex;
+  display: block;
   padding: 0;
   box-sizing: border-box;
 }
@@ -102,37 +102,40 @@ button:hover {
 }
 
 #christmasCountdownSection {
-  width: 30%;
-  background-color: red;
-  border-radius: 100px;
+  width: 50%;
+  max-width: 400px;
+  background-color: #fe2d48;
+  border-radius: 10px;
   color: white;
   box-sizing: border-box;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 #christmasCountdownSection input {
   margin: 5px 0;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #christmasCountdownSection button {
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-footerNav {
-  background: white;
+#footerNav {
+  background: #d1ffb8;
   text-align: center;
   padding: 20px 0;
 }
 
-footerNav a {
+#footerNav a {
   text-decoration: none;
   transition: color 0.3s ease;
   padding: 10px 0;
 }
 
-footerNav a:hover {
+#footerNav a:hover {
   text-decoration: underline;
 }
