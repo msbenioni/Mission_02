@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panda Xpress</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Home / Header Section -->
+    <header>
+      <section id="home">
+        <h2>Welcome to Panda Xpress Delivery Service!</h2>
+      </section>
+    </header>
+
+    <main>
+      <!-- Section 1: Interactive Story - Start -->
+      <section id="introSection">
+        <img
+          id="pandaImageIntro"
+          src="pandaImageIntro.png"
+          alt="Panda with backpack"
+        />
+        <button id="startButton">Click To Begin</button>
+      </section>
+
+      <!-- Section 2: Interactive Story - Middle -->
+      <section id="interactiveSection">
+        <p id="instructionText">
+          Which colour vespa should Panda choose today?
+        </p>
+        <p>See if your selected colour is also Panda's favourite colour.</p>
+        <img
+          id="pandaImage"
+          src="pandaImageIntro.png"
+          alt="Panda Vespa Colours"
+        />
+        <button id="blueButton">Blue</button>
+        <button id="orangeButton">Orange</button>
+        <button id="yellowButton">Yellow</button>
+        <button id="pinkButton">Pink</button>
+        <button id="redButton">Red</button>
+        <button id="nextButton">CLICK TO SELECT</button>
+      </section>
+
+      <!-- Section 3: Interactive Story - End -->
+      <section id="conclusionSection">
+        <p id="finalMessage">
+          Panda is ready for delivery! Thank you for helping Panda!
+        </p>
+        <img id="pandaImageFinal" src="" alt="Panda Final Vespa Colours" />
+        <button id="restartButton">Restart</button>
+      </section>
+
+      <!-- Section 4: Christmas Countdown -->
+      <section id="christmasCountdownSection">
+        <h2>Panda is excited for Xmas...</h2>
+        <p>Can you tell Panda how many days left till Xmas???</p>
+
+        <label for="todaysDate">Today's Date:</label>
+        <input type="date" id="todaysDate" />
+        <label for="christmasDate">Christmas Date:</label>
+        <input type="date" id="christmasDate" />
+        <br />
+        <button id="calculateChristmasDateButton">Calculate Days to Xmas</button>
+        <p id="christmasDateResult"></p>
+      </section>
+    </main>
+
+    <footer>
+      <nav id="footerNav">
+        <a id="backToStartLink" href="#">Home</a>
+      </nav>
+    </footer>
+  </body>
+</html>

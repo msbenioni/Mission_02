@@ -1,0 +1,133 @@
+/* Global Settings */
+p {
+  font-size: 30px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #41642c;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 30px;
+  padding: 5px;
+  text-align: center;
+}
+
+header h2 {
+  color: white;
+}
+
+#christmasCountdownSection h2 {
+  font-size: 30px;
+}
+
+main {
+  text-align: center;
+  padding: 20px;
+  background-color: #000000;
+  background-image: url("panda_background.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+img {
+  max-width: 200%;
+  margin: auto;
+  display: block;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%); 
+  }
+  100% {
+    transform: translateX(100%); 
+  }
+}
+
+.move-right {
+  animation: moveRight 3s ease-in-out forwards;
+  position: relative;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: green;
+}
+
+#blueButton {
+  background-color: #2142ac;
+}
+
+#orangeButton {
+  background-color: #dc883b;
+}
+
+#yellowButton {
+  background-color: #d1a42a;
+}
+
+#pinkButton {
+  background-color: #cf3987;
+}
+
+#redButton {
+  background-color: #c42121;
+}
+
+#nextButton {
+  background-color: green;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#interactiveSection,
+#conclusionSection {
+  display: none;
+  color: black;
+  text-decoration: solid;
+  text-shadow: #000000;
+}
+
+#christmasCountdownSection {
+  padding: 10px;
+  background-color: #f5a623;
+  text-align: center;
+  border-radius: 10px;
+  margin: 1px 100px;
+  color: red;
+}
+
+#christmasCountdownSection input {
+  margin: 5px 0;
+}
+
+#christmasCountdownSection button {
+  margin-top: 10px;
+}
+
+#christmasCountdownSection p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#footerNav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#footerNav a:hover {
+  text-decoration: underline;
+}
